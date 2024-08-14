@@ -1,0 +1,118 @@
+Java Collection Interface
+
+    Collections Framework Vs. Collection Interface
+        
+        People often get confused between the collections framework and Collection Interface.
+
+        The Collection interface is the root interface of the collections framework. 
+        The framework includes other interfaces as well: Map and Iterator.
+         These interfaces may also have subinterfaces.
+
+Subinterfaces of the Collection Interface
+
+
+    1.List Interface
+        The List interface is an ordered collection that allows us to add and 
+        remove elements like an array. 
+
+    2.Set Interface
+        The Set interface allows us to store elements in different sets similar to the set in
+         mathematics. It cannot have duplicate elements.
+
+    3.Queue Interface
+        The Queue interface is used when we want to store and access elements in First In, 
+        First Out manner.
+
+    4.Java Map Interface
+        In Java, the Map interface allows elements to be stored in key/value pairs. 
+        Keys are unique names that can be used to access a particular element in a map. 
+        And, each key has a single value associated with it. 
+
+    5.Java Iterator Interface
+        In Java, the Iterator interface provides methods that can be used to access elements 
+        of collections. 
+
+    Why the Collections Framework used?
+            
+        The Java collections framework provides various data structures and algorithms that
+        can be used directly. This has two main advantages:
+
+        1.We do not have to write code to implement these data structures and algorithms manually.
+
+        2.Our code will be much more efficient as the collections framework is highly optimized.
+
+
+
+   1. List Interface
+            1.ArrayList
+            2.LinkedList
+            3.Vector
+            4.Stack
+
+        Methods of List
+
+            Methods	    Description 
+            add()	    adds an element to a list
+            addAll()	adds all elements of one list to another
+            get()	    helps to randomly access elements from lists
+            iterator()	returns iterator object that can be used to sequentially access elements of
+                        lists
+            set()	    changes elements of lists
+            remove()	removes an element from the list
+            removeAll()	removes all the elements from the list
+            clear()	    removes all the elements from the list (more efficient than removeAll())
+            size()	    returns the length of lists
+            toArray()	converts a list into an array
+            contains()	returns true if a list contains specific element
+
+
+
+        1.ArrayList
+
+            In Java, we use the ArrayList class to implement the functionality of resizable-arrays.
+
+            In Java, we need to declare the size of an array before we can use it. 
+            Once the size of an array is declared, it's hard to change it.
+
+            To handle this issue, we can use the ArrayList class. 
+            It allows us to create resizable arrays.
+
+            Unlike arrays, arraylists can automatically adjust their capacity when we add or 
+            remove elements from them. Hence, arraylists are also known as dynamic arrays.
+
+        2.Java LinkedList
+
+            The LinkedList class of the Java collections framework provides the functionality of 
+            the linked list data structure (doubly linkedlist).
+
+            Prev - stores an address of the previous element in the list. 
+                   It is null for the first element
+            Next - stores an address of the next element in the list. It is null for the 
+                   last element
+            Data - stores the actual data
+
+        3. Vector 
+            The Vector class synchronizes each individual operation. This means whenever we want to
+            perform some operation on vectors, the Vector class automatically applies a lock 
+            to that operation.
+
+        4.Stack
+            Stack is LAST IN FIRST OUT.
+
+
+        
+        Summary
+
+            Choose ArrayList for most general-purpose scenarios where you need fast random access
+                and can handle synchronization separately if needed.
+
+            Choose LinkedList if you need efficient insertions and deletions from the list 
+                but can tolerate slower access times.
+
+            Choose Stack if you specifically need stack operations and thread safety.
+            
+            Choose Vector if you need a thread-safe list and are fine with the performance 
+                overhead of built-in synchronization.
+
+            
+                    
